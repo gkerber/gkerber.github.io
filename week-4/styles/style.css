@@ -32,13 +32,13 @@ section {
 }
 
 aside {
-    font-size: 1.9rem;
+/*    font-size: 1.9rem;
     background-color: lightgrey;
     border: .25rem solid darkgrey;
-    padding: 1rem;
+    padding: 1rem; */
 /*    width: 80rem; */
-    height: 10rem;
-    margin-top: 2rem;
+/*    height: 10rem;
+    margin-top: 2rem; */
 }
 
 footer {
