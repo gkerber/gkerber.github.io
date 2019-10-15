@@ -1,0 +1,67 @@
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 10px;
+  margin: 20px;
+}
+
+/* Create styles for section containers that will be on your main page: text, color, and padding, at a minimum. */
+
+main {
+  font-size: 1.5rem;
+  color: black;
+  padding: 2rem;
+}
+
+p {font-size: 1.8rem;}
+
+/* Dress up the header some. Color, padding, background-color, whatever */
+
+h1 {
+    font-size: 2.4rem;
+    border: .5rem solid blue;
+    background-color: lightskyblue;
+    padding: 2rem;
+    height: 4rem;
+    text-align: center;
+  }
+
+ h2 {
+   font-size: 2.1rem;
+   border-bottom: .3rem solid blue;
+  }
+
+  /* For the header nav ul and header nav ul li, turn it into a horizontal navigation bar */
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+  li {
+    float: left;
+    font-size: 1.8rem;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.4rem 1.6rem;
+    text-decoration: none;
+  }
+
+  li a:hover {
+    background-color: darkgrey;
+  }
+
+  /* Create styles for the main page's footer: text, color, and padding, at a minimum */
+
+  footer {
+    color: blue;
+    padding: .5rem;
+  }
+
+  footer p {font-size: 1.1rem;}
