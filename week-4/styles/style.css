@@ -36,6 +36,7 @@ aside {
     background-color: lightgrey;
     border: .25rem solid darkgrey;
     padding: 1rem;
+    width: 130rem;
     height: 10rem;
     margin-top: 2rem;
 }
