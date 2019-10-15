@@ -17,12 +17,42 @@ header {
     color: deepskyblue;
     background-color: black;
     border-bottom: .3rem solid deepskyblue;
+    margin: 2rem;
+}
+
+/* Create styles for the rest of the containers you have in the week-4 folder, which will be an <aside> container at the very least. 
+   Give it a border, adjust the font-size so it's not the same as what's in a section, maybe give it a slight change in background-color 
+   or color, at a minimum. */
+
+section {
+    border: .25rem solid blue;
+    background-color: lightskyblue;
+    padding: 1rem;
+}
+
+aside {
+    font-size: 1.9rem;
+    background-color: lightgrey;
+    border: .25rem solid darkgrey;
+    padding: 1rem;
+    height: 10rem;
+    margin-top: 2rem;
+}
+
+footer {
+    padding: 1rem;
+    margin: 2.5rem;
+}
+
+footer p {
+    font-size: 1.1rem;
+    color: blue;
 }
 
 /*  For the elements inside the header, most likely an h1 and maybe an h2 or a p, 
     set the line-height and anything else you might like, such as text-align or padding  */
 header h1 {
-    line-height: 1.5; 
+    line-height: 1.5rem; 
     text-align: center;
 }
 
@@ -39,7 +69,7 @@ p, li { font-size: 1.4rem; }
 p { color: DarkSlateGray; }
 
 /* Set the line-height on li */
-li { line-height: 1.5; }
+li { line-height: 2.5rem; }
 
 /* Change the color for an unvisited link (a:link) */
 a:link { color:green; }
