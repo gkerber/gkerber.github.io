@@ -77,7 +77,7 @@ li { line-height: 2.5rem; }
 a:link { color:green; }
 
 /* Change the color for a visited link */
-a:visited { color: darkorange; }
+a:visited { color: indigo; }
 
 /* Change the CSS so when you mouse over a link, the background color and the link color both change, 
    and the underline disappears. */
