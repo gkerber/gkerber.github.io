@@ -74,7 +74,7 @@ p { color: DarkSlateGray; }
 li { line-height: 2.5rem; }
 
 /* Change the color for an unvisited link (a:link) */
-a:link { color: green; }
+a:link { color: #590080; }
 
 /* Change the color for a visited link */
 a:visited { color: indigo; }
