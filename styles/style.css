@@ -59,7 +59,10 @@ h1 {
 
   /* Create styles for the main page's footer: text, color, and padding, at a minimum */
 
-  footer {padding: .5rem;}
+  footer {
+      padding: 1rem;
+      margin: 2.5rem;
+  }
 
   footer p {
     color: blue;
