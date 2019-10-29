@@ -1,0 +1,173 @@
+/* 1.  Add a default font stack for the whole site, by assigning the rule to the html tag
+   2.  Set a default base font-size of 10px for the html tag  */
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+}
+
+/* For the header and main elements, add 2.5rem padding */
+header, main { padding: 2.5rem }
+
+/* Set a max-width for the main element, so it doesn't go on forever */
+main { max-width: 150rem; }
+
+/* 1.  For the header element, set a background-color and a color for the text
+   3.  For the header element, add a border-bottom that matches the text color. Start by making the border .3rem and solid  */
+header {
+    color: deepskyblue;
+    background-color: black;
+    border-bottom: .3rem solid deepskyblue;
+    margin: 2rem;
+}
+
+/* Create styles for the rest of the containers you have in the week-4 folder, which will be an <aside> container at the very least. 
+   Give it a border, adjust the font-size so it's not the same as what's in a section, maybe give it a slight change in background-color 
+   or color, at a minimum. */
+
+section {
+    border: .25rem solid blue;
+    background-color: lightskyblue;
+    padding: 1rem;
+    width: 130rem;
+}
+
+aside {
+    font-size: 1.9rem;
+    background-color: lightgrey;
+    border: .25rem solid darkgrey;
+    padding: 1rem;
+    width: 130rem;
+    height: 10rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+footer {
+    padding: 1rem;
+    margin: 2.5rem;
+}
+
+footer p {
+    font-size: 1.1rem;
+    color: blue;
+}
+
+/*  For the elements inside the header, most likely an h1 and maybe an h2 or a p, 
+    set the line-height and anything else you might like, such as text-align or padding  */
+header h1 {
+    line-height: 1.5rem; 
+    text-align: center;
+}
+
+/*  Set the font-size for h1 to 2.3em and see how it looks. (Probably too small). Try 2.4em. */
+h1 { font-size: 2.4rem; }
+
+/* Set the font-size for h2 to 2em and see how it looks. (Probably too small). Try 2.1em. */
+h2 { font-size: 2.1rem; }
+
+/* Set the font-size for p and li to 1.2em and see how it looks. (Probably too small). Try 1.4em. */
+p, li { font-size: 1.4rem; }
+
+/* Assignment 1 */
+p { color: DarkSlateGray; }
+
+/* Set the line-height on li */
+li { line-height: 2.5rem; }
+
+/* Change the color for an unvisited link (a:link) */
+a:link { color: #590080; }
+
+/* Change the color for a visited link */
+a:visited { color: indigo; }
+
+/* Change the CSS so when you mouse over a link, the background color and the link color both change, 
+   and the underline disappears. */
+a:hover {
+    color: darkred;
+    background-color: black;
+    text-decoration: none;
+}
+
+/* Change the CSS so when you click a link, the background color and the link color reverse, 
+   and the underline disappears. */
+a:active {
+    color:  black;
+    background-color: darkred;
+    text-decoration: none;
+}
+
+/* Create a rule for the figure container, using the section ID you created earlier. 
+   Float the figure container to the right or left. Add some padding so the text doesn't 
+   run right up against the image. */
+ 
+section#picture-me {
+    height: 42rem;
+    margin-bottom: 2rem;
+}
+
+section#picture-me figure {float: left;
+    background-color: yellow;
+}
+
+section#picture-me img {
+    background-color: rgb(207,232,220);
+    margin-right: 5px; 
+    border-radius: 5px;
+    background-color: rgb(207,232,220);
+    padding: 1em;
+}
+
+/* Create a rule for the section following the one with the image, using clear:left so 
+   that this next section ignores the float, and moves back into the normal page layout flow. */
+
+section#birthplace {clear: left;}
+
+/* Use relative positioning to offset the .intro class you created earlier, and change its size 
+   and color or something. Here's my example.  */
+
+.intro {
+   position: relative;
+   top: 1rem;
+   left: 2rem;
+   background-color: black;
+   color: white;
+   width: 340px;
+   padding: 2rem;
+}
+
+/* Set the bit-columns class to display in three columns. */
+
+.bit-columns {
+    column-count: 3;
+    column-gap: 60px;
+}
+
+/* Using media query, change the bit-columns class to:
+   1.  two columns when the min-width is 321px and the max-width is 600px.
+   2.  to one column when the width is less than 321px
+   hint: unset is your friend.  */
+
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+    .bit-columns { 
+        column-count: 2;
+        column-gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+   .bit-columns { column-count: 1;}
+}
+
+/* Gail playing with images that are side-by-side */
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+    float: left;
+    width: 33.3%;
+}
+
+/* Clear floats after image containers */
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
