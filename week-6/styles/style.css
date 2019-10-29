@@ -105,9 +105,7 @@ section#picture-me {
     margin-bottom: 2rem;
 }
 
-section#picture-me figure {float: left;
-    background-color: yellow;
-}
+section#picture-me figure {float: left;}
 
 section#picture-me img {
     background-color: rgb(207,232,220);
