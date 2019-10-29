@@ -20,13 +20,29 @@
         line-height: 100px;
         margin: 0;
       }
+      /* Add these declarations to the CSS rule for article:
+            * -webkit-column-break-inside:avoid; */ /* Chrome, Safari, Opera */
+      /*    * page-break-inside:avoid;           */ /* Fire                  */
+      /*    * break-inside:avoid;                */ /* IE 10+                */
       article {
+        -webkit-column-break-inside:avoid; /* Chrome, Safari, Opera          */
+        page-break-inside:avoid;           /* Firefox                        */
+        break-inside:avoid;                /* IE 10+                         */
         padding: 10px;
         margin: 10px;
         background: goldenrod;
       }
       section {
         /* Add your column CSS here */
+        /* In the style container on this page, add declarations for section to break
+           the contents of the section container into columns with these characteristics
+              * at least 300px wide
+              * not more than 4 columns
+              * 20px space between each column
+              * a 5px dashed border whose color matches the header background color */
+        columns: 300px 4;
+        column-gap: 20px;
+        column-rule: 5px dashed darkslateblue;
       }
     </style>
   </head>
