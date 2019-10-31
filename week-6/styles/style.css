@@ -144,6 +144,13 @@ section#birthplace {clear: left;}
     column-gap: 60px;
 }
 
+.layouts {
+    border: .25rem solid blue;
+    background-color: lightskyblue;
+    padding: 1rem;  
+    width: min-content; 
+}
+
 /* Using media query, change the bit-columns class to:
    1.  two columns when the min-width is 321px and the max-width is 600px.
    2.  to one column when the width is less than 321px
