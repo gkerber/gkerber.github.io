@@ -28,7 +28,10 @@ section {
     border: .25rem solid blue;
     background-color: lightskyblue;
     padding: 1rem;
-    width: 130rem;
+/*  Your main index page had me stumped for a bit, wondering why those top 3 images weren't responding
+    Here's the answer: in the CSS, change the section width from 130rem to min-content  */
+/*  width: 130rem;   */
+    width: min-content;
 }
 
 aside {
