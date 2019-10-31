@@ -154,22 +154,38 @@ section#birthplace {clear: left;}
         column-count: 2;
         column-gap: 10px;
     }
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
 }
 
 @media only screen and (max-width: 320px) {
-   .bit-columns { column-count: 1;}
+   .bit-columns { column-count: 1; }
+   .responsive { width: 100%; }
 }
 
 /* Gail playing with images that are side-by-side */
 /* Three image containers (use 25% for four, and 50% for two, etc) */
-.column {
-    float: left;
-    width: 33.3%;
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
 }
 
-/* Clear floats after image containers */
-.row::after {
-    content: "";
-    clear: both;
-    display: table;
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
