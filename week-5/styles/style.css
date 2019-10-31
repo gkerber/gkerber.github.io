@@ -168,24 +168,23 @@ section#birthplace {clear: left;}
 /* Three image containers (use 25% for four, and 50% for two, etc) */
 
 .responsive {
-    padding: 0 6px;
-    float: left;
-    width: 24.99999%;
-    }
-  }
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
 
-  div.desc {
-    padding: 15px;
-    text-align: center;
-  }
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
 
-  div.gallery img {
-    width: 100%;
-    height: auto;
-  }
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
 
-  .clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
