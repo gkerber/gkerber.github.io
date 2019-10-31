@@ -30,8 +30,8 @@ section {
     padding: 1rem;
 /*  Your main index page had me stumped for a bit, wondering why those top 3 images weren't responding
     Here's the answer: in the CSS, change the section width from 130rem to min-content  */
-    width: 130rem;   
-/*  width: min-content; */
+/*    width: 130rem; */  
+    width: min-content;
 }
 
 aside {
@@ -39,8 +39,8 @@ aside {
     background-color: lightgrey;
     border: .25rem solid darkgrey;
     padding: 1rem;
-    width: 130rem;
-/*  width: min-content; */
+/*  width: 130rem; */
+    width: min-content;
     height: 10rem;
     margin-top: 2rem;
 }
