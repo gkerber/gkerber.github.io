@@ -148,7 +148,6 @@ section#birthplace {clear: left;}
     border: .25rem solid blue;
     background-color: lightskyblue;
     padding: 1rem;  
-    width: min-content; 
 }
 
 /* Using media query, change the bit-columns class to:
