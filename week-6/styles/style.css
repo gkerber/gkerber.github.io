@@ -3,13 +3,18 @@
 html {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 10px;
+/*  Give it all margin: auto */
+    margin: auto;
 }
 
 /* For the header and main elements, add 2.5rem padding */
 header, main { padding: 2.5rem }
 
 /* Set a max-width for the main element, so it doesn't go on forever */
-main { max-width: 150rem; }
+main { 
+/* Remove widths & max-widths on main, section, aside */
+/* max-width: 150rem; */
+}
 
 /* 1.  For the header element, set a background-color and a color for the text
    3.  For the header element, add a border-bottom that matches the text color. Start by making the border .3rem and solid  */
@@ -30,7 +35,8 @@ section {
     padding: 1rem;
 /*  Your main index page had me stumped for a bit, wondering why those top 3 images weren't responding
     Here's the answer: in the CSS, change the section width from 130rem to min-content  */
-    width: 130rem; 
+/*  Remove widths & max-widths on main, section, aside */
+/*  width: 130rem;   */
 /*  width: min-content; */
 }
 
@@ -39,7 +45,8 @@ aside {
     background-color: lightgrey;
     border: .25rem solid darkgrey;
     padding: 1rem;
-    width: 130rem;
+/*  Remove widths & max-widths on main, section, aside */
+/*  width: 130rem; */
 /*  width: min-content;  */
     height: 10rem;
     margin-top: 2rem;
@@ -133,7 +140,8 @@ section#birthplace {clear: left;}
    left: 2rem;
    background-color: black;
    color: white;
-   width: 340px;
+/* Remove width? */
+/* width: 340px; */
    padding: 2rem;
 }
 
