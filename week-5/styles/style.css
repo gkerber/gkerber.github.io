@@ -161,7 +161,7 @@ section#birthplace {clear: left;}
         column-count: 2;
  /*     There is overlap with the intro.  Try column gap = 15px */
  /*     column-gap: 10px; */
-        column-gap: 15px;
+        column-gap: 20px;
     }
     .responsive {
         width: 49.99999%;
