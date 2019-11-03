@@ -166,7 +166,9 @@ section#birthplace {clear: left;}
 @media only screen and (min-width: 321px) and (max-width: 600px) {
     .bit-columns { 
         column-count: 2;
-        column-gap: 10px;
+ /*     There is overlap with the intro.  Try column gap = 15px */
+ /*     column-gap: 10px; */
+        column-gap: 15px;
     }
     .responsive {
         width: 49.99999%;
