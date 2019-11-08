@@ -53,6 +53,37 @@ header {
     background-color: darkgrey;
   }
 
+/* Reports */
+
+  #reports-nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+  }
+  
+ #reports-nav li {
+    float: left;
+    font-size: 1.8rem;
+    border-right-style: solid;
+    border-right-color: white;
+    width: 20rem; 
+  }
+  
+ #reports-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.4rem 1.6rem;
+    text-decoration: none;
+  }
+
+  #reports-nav li a:hover {
+    background-color: darkgrey;
+  }
+
 /* Create styles for section containers that will be on your main page: text, color, and padding, at a minimum. */
 
 main {
@@ -73,10 +104,15 @@ h1 {
     text-align: center;
   }
 
- h2 {
-   font-size: 2.1rem;
-   border-bottom: .3rem solid blue;
-  }
+ h2 { font-size: 2.1rem; }
+
+  h2#main-purpose { border-bottom: .3rem solid blue; }
+
+section#report-list {
+    border: .25rem solid blue;
+    background-color: lightskyblue;
+    padding: 1rem;
+}
 
   /* Create styles for the main page's footer: text, color, and padding, at a minimum */
 
