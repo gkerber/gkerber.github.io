@@ -1,0 +1,83 @@
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 10px;
+    margin: auto;
+}
+
+header, main { padding: 2.5rem }
+
+header {
+    color: deepskyblue;
+    background-color: black;
+    border-bottom: .3rem solid deepskyblue;
+    margin: 2rem;
+}
+
+header h1 {
+    line-height: 1.5rem; 
+    text-align: center;
+}
+
+.return { font-size: 2.4rem; }
+
+.register { font-size: 2.1rem; }
+
+h1 { font-size: 2.4rem; }
+
+h2 { font-size: 2.1rem; }
+
+h3 { 
+     font-size: 1.9rem; 
+     padding-top: 2rem;
+}
+
+p, li { font-size: 1.4rem; }
+
+a {
+    font-size: 1.4rem;
+    line-height: 2.5rem; 
+    padding-left: 3rem;
+}
+
+li { 
+    line-height: 2.5rem; 
+    padding-left: 3rem;
+    font-style: italic;
+}
+
+section {
+    border: .25rem solid blue;
+    background-color: lightskyblue;
+    padding: 1rem;
+}
+
+footer {
+    padding: 1rem;
+    margin: 2.5rem;
+}
+
+footer p {
+    font-size: 1.1rem;
+    color: blue;
+}
+
+p {
+    padding-left: 3rem;
+    font-style: italic;
+}
+
+a:link { color: #590080; }
+
+a:visited { color: indigo; }
+
+a:hover {
+    color: darkred;
+    background-color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color:  black;
+    background-color: darkred;
+    text-decoration: none;
+}
