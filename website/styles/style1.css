@@ -1,7 +1,7 @@
 
 /* Color Scheme: Japanese Garden
    #D8CAA8 (Cream)
-   #ffffcc (Yellow)
+   #FFFFCC (Yellow)
    #5C832F (Bright Green)
    #284907 (Dark Green)
    #382513 (Brown)
@@ -76,7 +76,7 @@ body {background-color: #D8CAA8}
 
 /* The main navigation is positioned just below the header with a border color of yellow */
 
-nav { border: 4px solid #ffffcc; }
+nav { border: 4px solid #FFFFCC; }
 
 #website-nav ul {
     display: inline-block;
