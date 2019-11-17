@@ -8,7 +8,7 @@ html {
    Nav, Main, Footer sections on your main index.html page */
 
 h1, nav, main, footer {
-  width: 140rem;
+  width: 140rem; 
   padding: 2rem;
 }
 
@@ -62,7 +62,7 @@ header {
     padding: 0;
     overflow: hidden;
     background-color: black;
-  }
+  } 
   
  #reports-nav li {
     float: left;
@@ -78,11 +78,42 @@ header {
     text-align: center;
     padding: 1.4rem 1.6rem;
     text-decoration: none;
-  }
+  } 
 
   #reports-nav li a:hover {
     background-color: darkgrey;
-  }
+  } 
+
+/* Website */
+
+#website-nav ul {
+  display: inline-block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+} 
+
+#website-nav li {
+  float: left;
+  font-size: 1.5rem;
+  border-right-style: solid;
+  border-right-color: white;
+  width: 25rem; 
+}
+
+#website-nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 1.4rem 1.6rem;
+  text-decoration: none;
+} 
+
+#website-nav li a:hover {
+  background-color: darkgrey;
+} 
 
 /* Create styles for section containers that will be on your main page: text, color, and padding, at a minimum. */
 
