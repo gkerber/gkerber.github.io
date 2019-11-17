@@ -143,18 +143,25 @@ figure {
 
 a:link { color: #0000FF; }
 
+/* adding a:focus per Lynda video instructions */
+a:focus { outline: thin dotted; }
+
 a:visited { color: #800080; }
 
+/* Adding outline: 0; per Lynda video instructions */
 a:hover {
     color: darkred;
     background-color: black;
     text-decoration: none;
+    outline: 0;
 }
 
+/* Adding outline: 0; per Lynda video instructions */
 a:active {
     color:  black;
     background-color: darkred;
     text-decoration: none;
+    outline: 0;
 }
 
 footer {
