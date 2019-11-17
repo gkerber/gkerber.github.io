@@ -184,8 +184,24 @@ a:active {
     outline: 0;
 }
 
-a img { border: none; }
+/* Image styles */
+a img { border: 4px solid white; }
 
+a:hover img { border: 4px solid #D5973C; }
+
+.thumb {
+	border: none;
+	padding-top: 58px;
+}
+a .thumb:hover {
+	padding: 4px;
+	background:#D5973C;
+	width: 150px;
+	height: 150px;
+	border: none;
+}
+
+/* Footer */
 footer {
     padding: 1rem;
     margin: 2rem;
