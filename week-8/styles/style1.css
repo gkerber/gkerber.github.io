@@ -36,12 +36,12 @@ html {
 }
 */
 
-/* The header section is 200px tall, positioned along the top of each page with the logo centered in the frame. 
+/* The header section is 210px tall, positioned along the top of each page with the logo centered in the frame. 
    There is clip art of Havanese dogs framing the logo.
    The background is brown. */
 
 header {
-    height: 200px; 
+    height: 210px; 
     background-color: #382513;
     border-bottom: .3rem solid  #5C832F;
     text-align: center;
