@@ -1,0 +1,204 @@
+  
+
+/* Color Scheme: Japanese Garden
+   #D8CAA8 (Cream)
+   #FFFFCC (Yellow)
+   #5C832F (Bright Green)
+   #284907 (Dark Green)
+   #382513 (Brown)
+   #363942 (Gray)
+*/
+
+html {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin: auto;
+    color: #284907;
+}
+
+/* The header section is 200px tall, positioned along the top of each page with the logo centered in the frame. 
+   There is clip art of Havanese dogs framing the logo.
+   The background is brown. */
+
+header {
+    height: 200px; 
+    background-color: #382513;
+    border-bottom: .3rem solid  #5C832F;
+    text-align: center;
+    margin: 2rem;
+    padding: 1rem;
+}
+
+header h1 {
+    color: #382513 ;
+    font-size: calc(.75em + 1vw);
+    margin-top: 0.2em;
+    margin-bottom: 0.2em;
+    text-align: center;
+}
+
+.container {
+       display: grid;
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-gap: 20px;
+       gap: 10px;
+       justify-items: center;
+    }
+
+.container > div {
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #5C832F;
+    border: 2px solid #284907;
+}
+
+.left-clip {
+   grid-column-start: 1;
+   grid-row-start: 1;
+   grid-row-end: span 2;
+   vertical-align: middle;
+}
+
+.right-clip {
+   grid-column-start: 3;
+   grid-row-start: 1;
+   grid-row-end: span 2;
+   vertical-align: middle;
+}
+
+.hdr-text {
+    font-family: papyrus;
+    font-weight: bold;
+}
+
+/* Background is Cream*/
+body {background-color: #D8CAA8}
+
+
+/* The main navigation is positioned just below the header with a border color of yellow */
+
+nav { border: 4px solid #FFFFCC; }
+
+#website-nav ul {
+    display: inline-block;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #284907;
+  }
+  
+ #website-nav li {
+    float: left;
+    font-size: 1.8rem;
+    border-right-style: solid;
+    border-right-color: white;
+    width: 24rem; 
+  }
+  
+ #website-nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 1.4rem 1.6rem;
+    text-decoration: none;
+  }
+
+  #website-nav li a:hover {
+    background-color: darkgrey;
+  }
+
+.website-nav {
+   padding-left: 2rem;
+   background-color: #ffffcc;
+}
+
+h2 { 
+    font-size: 2.1rem; 
+    color: #363942;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+/* Default font size: 12 px       */
+/* Default font color: Dark Green */
+p {
+    font-size: 12px;
+    color: #284907;
+}
+
+/* Images will be over gray background with a bright green border around the container */
+
+figure { 
+    background-color: #363942; 
+    padding: 1rem;
+    border: 4px solid #5C832F; 
+}
+
+/* Link:          Blue 
+   Visited Links: Purple
+   Hover:         Red
+   Active:        Black With A Red Background
+*/
+
+a:link { color: #0000FF; }
+
+a:visited { color: #800080; }
+
+a:hover {
+    color: darkred;
+    background-color: black;
+    text-decoration: none;
+}
+
+a:active {
+    color:  black;
+    background-color: darkred;
+    text-decoration: none;
+}
+
+footer {
+    padding: 1rem;
+    margin: 2rem;
+  }
+
+  footer p {
+    color:#284907 ;
+    font-size: 1.1rem;
+  }
+
+/* Responsive design */
+
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+   .responsive { width: 100%; }
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width:  30%;
+  margin: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
