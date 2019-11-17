@@ -184,6 +184,8 @@ a:active {
     outline: 0;
 }
 
+a img { border: none; }
+
 footer {
     padding: 1rem;
     margin: 2rem;
