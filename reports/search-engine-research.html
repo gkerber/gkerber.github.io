@@ -1,0 +1,245 @@
+<html lang="en">
+  <head>
+    <!-- It appears you want to use the styles below and not the css style sheet
+    <link rel="stylesheet" type="text/css" href="styles/style.css" />
+    -->
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Search Engine Report</title>
+    <style>
+      html {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 10px;
+      }
+      body {
+        max-width: 1000px;
+        margin: auto;
+        font-size: 1.9em;
+        padding: 1em;
+      }
+      footer {
+        border-top: 6px solid #999;
+        margin-top: 3em;
+        padding-top: 2em;
+      }
+      header h1 {
+        background-color: #336699;
+        color: #ccc;
+        padding: 0.5em;
+        border-top: 5px solid #6699cc;
+        border-radius: 10px;
+        margin-left: -1em;
+        margin-right: -1em;
+      }
+      header nav ul {
+        list-style-type: none;
+        background-color: #999;
+      }
+      header nav ul li {
+        display: inline-block;
+      }
+      header nav ul li a {
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+      }
+      header nav ul li a:hover {
+        background-color: #666;
+      }
+      #project-plan dt {
+        border-top: 2px solid #000;
+        font-weight: bold;
+        margin-top: 1em;
+        padding-top: 1em;
+      }
+      #project-plan dd:last-child {
+        border-bottom: 6px solid #000;
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+        margin-left: inherit;
+        padding-left: 2em;
+      }
+      a { padding-left: 2em; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Search engine report</h1>
+      <div w3-include-html="..\nav.html"></div>
+    </header>
+    <main>
+      <section>
+        <dl>
+          <dt>How does a search engine work?</dt>
+          <dd>A search engine uses a three step process:
+            <ol>
+                <li>Web Crawling</li>
+                <p>The search engine determines what has been published on the web</p>
+                <li>Indexing</li>
+                <p>A repository of web pages returned from web crawling is stored in a data center. 
+                   This data store is organized and used to provide the search results that are returned.</p>
+                <li>Algorithm</li>
+                <p>An algorithm is a complex equation which calculates a value for any given site in relation
+                  to a search term</p>
+            </ol>
+            <a href = "https://www.business2community.com/seo/how-search-engines-work-using-a-3-step-process-0322639" title="Business2Community" target="_blank">Reference</a>
+           </dd>
+          <dt>
+            Why do different search-engines give different ranking to websites
+            for the same search phrase?
+          </dt>
+          <dd>How the web is crawled, how data is indexed, and the algorithm used to calculate a value for a given site 
+               is unique to each search engine so results will vary in accordance with the different way of collecting, organizing, and
+               ranking search results           
+          </dd>
+          <a href = "https://www.quora.com/Why-do-different-search-engines-give-different-results" title="Quora" target="_blank">Reference</a>
+          <dt>What is a &lt;meta&gt; tag?</dt>
+          <dd>Metadata is data about data. The &lt;meta&gt; tag provides metadata about the HTML document 
+                (i.e. page description, keywords, author of the document, last modified).
+          </dd>
+          <a href = "https://www.w3schools.com/tags/tag_meta.asp" title="W3Schools" target="_blank">Reference</a>
+          <dt>What is the purpose for Keyword and Description meta tags?</dt>
+          <dd>The meta Keywords is an HTML attribute that helps tell search engines what the topic of a page is </dd>
+          <a href = "https://www.wordstream.com/meta-keyword" title="WordStream" target="_blank">Reference</a>
+          <dd>The meta Description is an HTML attribute that provides a brief summary of a web page</dd>
+          <a href = "https://moz.com/learn/seo/meta-description" title="Moz" target="_blank">Reference</a>
+          <dt>Why might you include meta tags in your pages?</dt>
+          <dd>Meta tags might be included to provide data about a page to search engines and website visitors.
+          </dd>
+          <a href = "https://www.searchenginewatch.com/2018/04/04/a-quick-and-easy-guide-to-meta-tags-in-seo/" title="SearchEngineWatch" target="_blank">Reference</a>   
+          <dt>
+            Do meta tags make your pages more easily searchable or improve its
+            ranking?
+          </dt>
+          <dd> Most of my research only talks about Google.  Neither the Description or Keywords meta tag are not used by Google for ranking.</dd>
+          <a href = "https://webmasters.googleblog.com/2009/09/google-does-not-use-keywords-meta-tag.html" title="Webmasters" target="_blank">Reference</a>        
+          <dd></dd>
+          <a href = "https://www.ezdia.com/meta-tags-still-important-seo-2019/" title="ezdia" target="_blank">Reference</a>  
+          <dd>Google may use metadata to classify or display information about pages which would help with searchability</dd>
+          <a href = "https://www.hobo-web.co.uk/definitive-guide-to-using-important-meta-tags/#do-meta-tags-help-seo-in-2019-" title="hobo-web" target="_blank">Reference</a>               
+          <dt>
+            What are several ways that you can publicize your personal website
+            project and make it more visible on the web?
+          </dt>
+          <dd>
+              <ol>
+                <li>Publish Relevant Content</li>
+                <li>Update Your Content Regularly</li>
+                <li>Review And Update The Web Page Metadata</li>
+                <li>Use Descriptive Links In Text</li>
+                <li>Use Alt Tags To Describe Visual And Video Media</li>
+              </ol>
+              <a href = "https://www.mtu.edu/umc/services/digital/seo/" title="Michigan Tech" target="_blank">Reference</a>  
+          </dd>
+        </dl>
+      </section>
+
+      <section>
+        <table>
+          <thead>
+            <tr>
+              <th></th>
+              <th>URL</th>
+              <th>Words used in page titles and headings</th>
+              <th>
+                Words used in <em>Description</em> meta tags <br /><span
+                  class="smaller"
+                  >(or "none" if no description tags are used)</span
+                >
+              </th>
+              <th>
+                Words used in <em>Keyword</em> meta tags <br /><span
+                  class="smaller"
+                  >(or "none" if no keyword tags are used)</span
+                >
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <td>Site 1</td>
+              <td>https://www.beaglesunlimited.com</td>
+              <td>&lt;title&gt; Beagle Pictures, Information &amp; Forum | Beagles Unlimited
+                  &lt;h1&gt; Welcome to the Original Beagle Website</td>
+              <td>Dedicated to the Beagle dogs and Beagle puppies. Covering topics like Hunting Beagles, Beagle Breeders and Beagle Rescue.
+                    Get tips on training your Beagle dog and Beagle puppy!  Free Beagles Unlimited Magazine!</td>
+              <td>beagles, hounds, rabbits, hare, small game, hunting, beagel, beagles unlimited, beagles for sale, training beagles, 
+                  beaglesunlimited, beagle breeders, beagle magazine, beagle puppies</td>
+            </tr>
+            <tr>
+              <td>Site 2</td>
+              <td>http://www.siberian-huskies101.com</td>
+              <td>&lt;title&gt;  Siberian Huskies... Facts and Information on Siberian Huskies and Husky puppies
+                  &lt;h2&gt;  Siberian Huskies  (no &lt;h1&gt;)
+              </td>
+              <td>Find information about Siberian Huskies including behavior, color, and breeder information.</td>
+              <td>siberian huskies,siberian husky,snow dogs,alaskan malamute,husky</td>
+            </tr>
+            <tr>
+              <td>Site 3</td>
+              <td>https://dogtime.com/dog-breeds/havanese</td>
+              <td>&lt;title&gt; Havanese Dog Breed Information, Pictures, Characteristics &amp; Facts – Dogtime
+                  &lt;h1&gt; Havanese
+              </td>
+              <td>Havanese information including pictures, training, behavior, and care of Havaneses and dog breed mixes.</td>
+              <td>No &lt;keywords&gt; meta tag</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section>
+        <dl>
+          <dt>
+            Based on your research, suggest appropriate updates to your
+            website's titles and headings.
+          </dt>
+          <dd>&lt;title&gt;Havanese Dog Information&lt;/title&gt;
+              &lt;h1&gt;I Have A Havanese&lt;/h1&gt; 
+              &lt;h2&gt;Learn about Havanese dogs here!&lt;/h2&gt;
+          </dd>
+          <dt>
+            Based on your research, create a Description meta tag and a Keywords
+            meta tag (and an Author meta tag) for inclusion your site.
+          </dt>
+          <dd>
+            <p><strong>Description:</strong></p>
+            <p>&lt;meta name="description" content="Information about Havanese dogs including history, characteristics, and health issues."&gt;</p>
+          </dd>
+          <dd>
+            <p><strong>Keywords:</strong></p>
+            <p>&lt;meta name="keywords" content="Havanese, Havanese Dogs, Havanese History, Havanese Characteristics, Havanese Health, Cuban Dog"&gt;</p>
+          </dd>
+          <dd>
+            <p><strong>Author:</strong></p>
+            <p>&lt;meta name="author" content="Gail Kerber"&gt;</p>
+          </dd>
+          <dt>
+            List three techniques to publicize your site that makes sense for
+            its purpose and its audience.
+          </dt>
+          <dd>
+            <p>One: Focus On Website Search Engine Optimization (SEO)</p>
+            <p>Two: Submit website to online directories</p>
+            <p>Three: Post on related forums</p>
+            <a href = "https://www.wix.com/blog/2018/06/promote-website-free" title="Wix" target="_blank">Reference</a>  
+          </dd>
+        </dl>
+      </section>
+    </main>
+    <footer>
+      &copy;Gail Kerber
+    </footer>
+    <!-- Enable includes -->
+    <script src="../scripts/includes.js"></script>
+
+    <!-- If you are wanting to use includes throughout your site, you'll have to change the above link to be whatever 
+      location your script is in. For me, it would be "/bit112-fall-2019/scripts/includes.js" because my site is 
+      https://alboss-cascadia.github.io/bit112-fall-2019/ -->
+
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>
