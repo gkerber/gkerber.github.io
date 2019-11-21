@@ -192,9 +192,7 @@
             <ul>
               <li>images directory – contains jpgs and gifs</li>
               <li>styles directory – contains all of the style sheets</li>
-              <li>scripts directory - contains javascript</li>
               <li>index.html – home page for site, site purpose and overview</li>
-              <li>nav.html - navigation menu</li>
               <li>history.html - history of the Havanese breed</li>
               <li>characteristics.html - breed characteristics</li>
               <li>health.html - health issues typical of the breed</li>
@@ -211,9 +209,7 @@
             <ul>
               <li class="folder">images directory – contains jpgs and gifs</li>
               <li class="folder">styles directory – contains all of the style sheets</li>
-              <li class="folder">scripts directory – contains all of the javascript</li>
               <li>index.html – home page for site, site purpose and overview</li>
-              <li>nav.html - navigation bar</li>
               <li>history.html - History of the breed</li>
               <li>characteristics.html - Breed characteristics</li>
               <li>health.html - Health issues typical of the breed</li>
@@ -223,7 +219,7 @@
         </ul>
         <h2>Navigation elements</h2>
         <p>
-          Navigation – There is a navigation bar on <span class="highlight">top</span> that links to all pages in the site.
+          Navigation – There is a navigation bar on top that links to all pages in the site.
         </p>
         <p>
           Other navigation elements - Links to other pages
@@ -292,6 +288,11 @@
               <div class="color-chip" style="background-color: #D8CAA8"></div>
           </div>
           <div class="color-item">
+              <p>Brown-Orange</p>
+              <p>##916A31</p>
+              <div class="color-chip" style="background-color: #916A31"></div>
+            </div>
+          <div class="color-item">
             <p>Bright Green</p>
             <p>#5C832F</p>
             <div class="color-chip" style="background-color: #5C832F"></div>
@@ -323,8 +324,13 @@
           <li>Images that are in public domain:
             <ul>
               <li>
+                 <!-- https://www.stickpng.com/img/animals/paw-prints/line-of-paw-prints -->
+                 <a href = "images/StickPNG_PawPrints_2.png" title="Puppy Tracks" target="_blank"> 
+                  StickPNG_PawPrints_2.png</a>
+               </li>
+              <li>
                 <!-- http://clipart-library.com/clipart/1775117.htm -->
-                <a href = "images/clipart-library-com-2760238.png" title="Havanese Clip Art" target="_blank"> 
+                <a href = "images/clipart-library-com-transparent.png" title="Havanese Clip Art" target="_blank"> 
                 clipart-library-com-2760238.png</a>
               </li>
               <li>
@@ -371,6 +377,13 @@
               </li>
             </ul>
           </li>
+          <li>Personal Images:  
+              <ul>
+                <li>
+                  <a href = "images/IndianaJones_Conehead_1200x1500.jpg"title="Indiana Jones With The Cone Of Shame" target="_blank">
+                  IndianaJones_Conehead_1200x1500.jpg</a>
+                </li>
+              </ul>
           </li>
           <!-- Need to look to see if there are any decent pics of Indy 
           <li>Mention if any photos or images are your own</li>
@@ -391,13 +404,14 @@
           <dt>Header</dt>
           <dd>
             <p>
-                The header section is 210px tall, positioned along the top of each page with the logo centered in the frame. 
-                There is clip art of Havanese dogs framing the logo. The background is brown.  There is a border along the bottom.
+                The header section is 95px tall, positioned along the top of each page with the logo centered in the frame. 
+                There is clip art puppy paw prints to the left. To the right is clip art of a Havanese.
+                The background is brown.  There is a border along the bottom.
             </p>
             <p class="code">
-              header { <br>height: 210px; <br>background-color: #382513; <br>
+              header { <br>height: 95px; <br>background-color: #382513; <br>
                 border-bottom: .3rem solid  #5C832F; <br> text-align: center; <br>
-                margin: 2rem; <br> padding: 1rem;<br>}</p>
+                margin: 2rem; <br> padding: 2rem; color: white;<br>}</p>
           </dd>
           <dt>Navigation</dt>
           <dd>
@@ -405,7 +419,12 @@
                 The main navigation is positioned just below the header with a border color of yellow.
             </p>
             <p class="code">
-                nav { border: 4px solid #FFFFCC; }
+                nav {
+                  background: #916A31;
+                  height: 4.5em; 
+                  margin-left: 2rem;
+                  margin-right: 4rem;
+               }
             </p>
           </dd>
           <dt>Images</dt>
