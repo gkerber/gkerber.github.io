@@ -15,122 +15,125 @@ html {
     color: #284907;
 }
 
-/* Icon after external links 
-
-   https://www.lynda.com/CSS-tutorials/Indicating-external-links/90367/116626-4.html
-
-   Requires font downloaded from http://www.fontsquirrel.com/fonts/modern-pictograms
-   and place in the project folder 'fonts'
-
-   Commenting out because I'm not going to use it, but want it for reference.
-
-   @font-face {
-       font-family: 'Modern';
-       src: url('fonts/modernpics-webfont.eot');
-       src: url('fonts/modernpics-webfont.eot?#iefix') format('embedded-opentype'),
-            url('fonts/modernpics-webfont.woff') format('woff'),
-            url('fonts/modernpics-webfont.ttf') format('truetype'),
-            url('fonts/modernpics-webfont.svg#ModernPictogramsNormal') format('svg');
-       font-weight: normal;
-       font-style: normal;
-}
-*/
-
-/* The header section is 210px tall, positioned along the top of each page with the logo centered in the frame. 
-   There is clip art of Havanese dogs framing the logo.
+/* The header section is 95px tall, positioned along the top of each page with the logo centered in the frame. 
+   There is clip art of footprints to the left.  A clipart of a Havanese floats to the right.
    The background is brown. */
 
+.header-section {
+    display: flex;
+}
+
+.header-section > div {
+    width: 33.33333%;
+}
+
+@media (max-width: 768px) {
+    .header-section > div {
+        width: 100%;
+    }
+}
+
 header {
-    height: 210px; 
-    background-color: #382513;
+    height: 95px; 
+    background-color:#382513;
     border-bottom: .3rem solid  #5C832F;
     text-align: center;
     margin: 2rem;
-    padding: 1rem;
+    padding: 2rem;
+    color: white;
 }
 
 header h1 {
-    color: #382513 ;
-    font-size: calc(.75em + 1vw);
-    margin-top: 0.2em;
+    color: white;
+    font-size: calc(1.5em + 1vw);
+    margin-top: 1em;
     margin-bottom: 0.2em;
     text-align: center;
-}
-
-.container {
-       display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
-       grid-gap: 20px;
-       gap: 10px;
-       justify-items: center;
-    }
-
-.container > div {
-    border-radius: 5px;
-    padding: 10px;
-    background-color: #5C832F;
-    border: 2px solid #284907;
-}
-
-.left-clip {
-   grid-column-start: 1;
-   grid-row-start: 1;
-   grid-row-end: span 2;
-   vertical-align: middle;
-}
-
-.right-clip {
-   grid-column-start: 3;
-   grid-row-start: 1;
-   grid-row-end: span 2;
-   vertical-align: middle;
-}
-
-.hdr-text {
     font-family: papyrus;
     font-weight: bold;
 }
 
-/* Background is Cream*/
+.havanese-clip {
+    float: right;
+    position: relative;
+    top: -18em;  
+    left: -6em;
+}
+
+/* Background is Cream */
 body {background-color: #D8CAA8}
 
+/* ------------ Navigation ------------ */
 
 /* The main navigation is positioned just below the header with a border color of yellow */
 
-nav { border: 4px solid #FFFFCC; }
+* micro-clearfix by Nicolas Gallagher */
+/* For modern browser */
+.cf:before,
+.cf:after {  
+   content:"";  
+   display:table;
+}
 
-#website-nav ul {
-    display: inline-block;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #284907;
-  }
-  
- #website-nav li {
-    float: left;
-    font-size: 1.8rem;
-    border-right-style: solid;
-    border-right-color: white;
-    width: 24rem; 
-  }
-  
- #website-nav li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 1.4rem 1.6rem;
-    text-decoration: none;
-  }
+.cf:after { clear:both; }
 
-  #website-nav li a:hover {
-    background-color: darkgrey;
-  }
+/* For IE 6/7 (trigger hasLayout) */
+.cf { zoom:1; }
 
-.website-nav {
-   padding-left: 2rem;
-   background-color: #ffffcc;
+/*horizontal menu styles*/
+nav {
+   background: #916A31;
+   height: 4.5em;  /* larger than ul, li below so some shows, creates 2-tone bar on bottom */
+   margin-left: 2rem;
+   margin-right: 4rem;
+}
+
+/* Strip defaults */
+
+.cf ul, li {
+   margin: 0;
+   padding: 0;
+   list-style: none;
+   float: left;
+}
+
+.cf ul {
+   background: #D5973C;
+   height: 4.1em;
+   width: 100%;
+}
+
+/* display horizontally (inline, not block) */
+
+.cf li a {
+   display: block;
+   line-height: 3.6em;
+   padding: 0 1em;
+   font-size: 15px;
+   color: white;
+   text-decoration: none;
+}
+
+.cf li a:hover {
+   background: #916A31;         /* same color as nav */
+   height: 3.6em;                 
+   padding-top: .3em;
+   position: relative;
+   top: -.3em;                    /* this fixes the menu text dropping a bit */
+   border-radius: .3em .3em 0 0;  /* round corners */
+}
+
+/* current class is applied to home in html nav */
+
+.current, a:hover.current {
+   background: #AD9B7F;
+   color: #eee;
+   padding-top: .3em;
+   position: relative;
+   top: -.3em;                    /* this fixes the menu text dropping a bit */
+   border-radius: .3em .3em 0 0;  /* round corners */
+   border-bottom: .3em solid #917F63;  
+   cursor: default;
 }
 
 h2 { 
@@ -140,11 +143,12 @@ h2 {
     padding-right: 2rem;
 }
 
-/* Default font size: 12 px       */
+/* Default font size: 20px       */
 /* Default font color: Dark Green */
 p {
-    font-size: 12px;
+    font-size: 20px;
     color: #284907;
+    padding-left: 2rem;
 }
 
 /* Images will be over gray background with a bright green border around the container */
@@ -184,24 +188,83 @@ a:active {
     outline: 0;
 }
 
-/* Image styles */
-a img { border: 2px solid white; }
+/* ------------ Image Page ------------ */
 
-a:hover img { border: 2px solid #D5973C; }
+.gallery a img { border: 2px solid white; }
 
-.thumb {
-	border: none;
-	padding-top: 58px;
+.gallery a:hover img { border: 2px solid #D5973C; }
+
+/* ------------ Table Styles ------------ */
+
+.TFtable{
+    margin-left: 4em;
+    border-collapse:collapse; 
+    width: 75%;
+  }
+  .TFtable td{ 
+    text: 2rem;
+    padding:7px; border:#916A31 2px solid;
+  }
+  /* provide some minimal visual accomodation for IE8 and below */
+  .TFtable tr{
+    background: #ffffcc;
+  }
+  /*  Define the background color for all the ODD background rows  */
+  .TFtable tr:nth-child(odd){ 
+    background: #AD9B7F;
+    color: white;
+  }
+  /*  Define the background color for all the EVEN background rows  */
+  .TFtable tr:nth-child(even){
+    background:#eee;
+  }
+
+/* ------------ Characteristics Web Page ------------ */
+
+ .charflex{
+
+  height: 35em;
+  width: 91em;
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  /*justify-content: space-between; */
+  flex-wrap: wrap;
 }
-a .thumb:hover {
-	padding: 2px;
-	background:#D5973C;
-	width: 150px;
-	height: 150px;
-	border: none;
+
+/* Characteristics table goes here */
+.charflex .charflexone { 
+  height: 90%;
+  width: 65%;
 }
 
-/* Footer */
+.charflex .charflextwo { 
+  height: 5%;
+  width: 65%; 
+}
+
+.charflex .charflexthree { 
+  height: 40%; 
+  width: 40%;
+}
+
+/* Additional info goes here */
+.charflex .charflexfour { 
+  height: 49%; 
+  width: 40%; 
+  color: #284907;
+  padding: 1em;
+  background-color:#FFFFCC;
+  border: 2px solid #916A31;
+ }
+
+  .charflexfour a { font-size: 1.5rem; }
+  .charflexfour p { font-size: 1.5rem; }
+
+  .check { float: left; }
+  .check-text { font-weight: bold; }
+
+/* ------------ Footer ------------ */
 footer {
     padding: 1rem;
     margin: 2rem;
@@ -212,17 +275,24 @@ footer p {
   font-size: 1.1rem;
 }
 
-/* Responsive design */
+/* ------------ Responsive Design ------------ */
+
+@media only screen and (min-width: 600px) and (max-width: 3000px) {
+  .responsive { width: 100%; }
+  .havanese-clip { width: 25%; } 
+}
 
 @media only screen and (min-width: 321px) and (max-width: 600px) {
     .responsive {
         width: 49.99999%;
         margin: 6px 0;
     }
+    .havanese-clip { width: 25%; }
 }
 
 @media only screen and (max-width: 320px) {
    .responsive { width: 100%; }
+   .havanese-clip { width: 25%; } 
 }
 
 .responsive {
@@ -247,29 +317,3 @@ div.gallery img {
   display: table;
   clear: both;
 }
-
-/* Icon after external links 
-
-   https://www.lynda.com/CSS-tutorials/Indicating-external-links/90367/116626-4.html
-
-   Requires font downloaded from http://www.fontsquirrel.com/fonts/modern-pictograms
-   and place in the project folder 'fonts'
-
-   Commenting out because I'm not going to use it, but want it for reference.
-
-  a[href^="http://"]:after {
-	  content:" o";
-	  font-family: Modern, sans-serif;
-	  font-size: 1.1em;
-	  position: relative;
-	  top: -.2em;
-  }
-  a[href$=".doc"]:after {
-	  content:" K";
-	  font-family: Modern, sans-serif;
-	  font-size: 1.1em;
-	  position: relative;
-	  top: -.2em;
-  }
-}
-*/
