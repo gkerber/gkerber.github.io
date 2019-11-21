@@ -264,6 +264,57 @@ a:active {
   .check { float: left; }
   .check-text { font-weight: bold; }
 
+/* ------------ History Web Page ------------ */
+
+.histflex{
+
+  height: 35em;
+  width: 91em;
+  display: flex;
+  flex-direction: column;
+  margin: 2em;
+  /*justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+/* Characteristics table goes here */
+.histflex .histflexone { 
+  height: 2%;
+  width: 40%;
+}
+
+.histflex .histflextwo { 
+  height: 96%;
+  width: 40%;
+}
+
+.histflex .histflexthree { 
+  height: 30%; 
+  width: 48%;
+  color: #284907;
+  background-color:#FFFFCC;
+  border: 2px solid #916A31;
+  
+  padding-top: 3px;
+  padding-left: 15px;
+  padding-right: 15px;
+  
+}
+
+.histflex .histflexfour { 
+  height: 67%; 
+  width: 65%; 
+ }
+
+ .histflex .histflexfive { 
+  height: 99%; 
+  width: 25%; 
+ }
+
+ .histflexthree a { font-size: 1.2rem; }
+ .histflextwo p { font-size: 1.2rem; } 
+ .histflexthree p { font-size: 1.2rem; }
+
 /* ------------ Footer ------------ */
 footer {
     padding: 1rem;
@@ -317,3 +368,4 @@ div.gallery img {
   display: table;
   clear: both;
 }
+
