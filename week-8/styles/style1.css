@@ -66,7 +66,7 @@ body {background-color: #D8CAA8}
 
 /* The main navigation is positioned just below the header with a border color of yellow */
 
-* micro-clearfix by Nicolas Gallagher */
+/* micro-clearfix by Nicolas Gallagher */
 /* For modern browser */
 .cf:before,
 .cf:after {  
@@ -201,7 +201,6 @@ a:active {
     width: 75%;
   }
   .TFtable td{ 
-    text: 2rem;
     padding:7px; border:#916A31 2px solid;
   }
   /* provide some minimal visual accomodation for IE8 and below */
