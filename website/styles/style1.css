@@ -1,0 +1,407 @@
+/* Color Scheme: Japanese Garden
+   #D8CAA8 (Cream)
+   #FFFFCC (Yellow)
+   #5C832F (Bright Green)
+   #284907 (Dark Green)
+   #382513 (Brown)
+   #363942 (Gray)
+*/
+
+html {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  margin: auto;
+  color: #284907;
+}
+
+/* The header section is 95px tall, positioned along the top of each page with the logo centered in the frame. 
+ There is clip art of footprints to the left.  A clipart of a Havanese floats to the right.
+ The background is brown. */
+
+.header-section {
+  display: flex;
+}
+
+.header-section > div {
+  width: 33.33333%;
+}
+
+@media (max-width: 768px) {
+  .header-section > div {
+      width: 100%;
+  }
+}
+
+header {
+  height: 95px; 
+  background-color:#382513;
+  border-bottom: .3rem solid  #5C832F;
+  text-align: center;
+  margin: 2rem;
+  padding: 2rem;
+  color: white;
+}
+
+header h1 {
+  color: white;
+  font-size: calc(1.5em + 1vw);
+  margin-top: 1em;
+  margin-bottom: 0.2em;
+  text-align: center;
+  font-family: papyrus;
+  font-weight: bold;
+}
+
+.havanese-clip {
+  float: right;
+  position: relative;
+  top: -18em;  
+  left: -6em;
+}
+
+/* Background is Cream */
+body {background-color: #D8CAA8}
+
+/* ------------ Navigation ------------ */
+
+/* The main navigation is positioned just below the header with a border color of yellow */
+
+/* micro-clearfix by Nicolas Gallagher */
+/* For modern browser */
+.cf:before,
+.cf:after {  
+ content:"";  
+ display:table;
+}
+
+.cf:after { clear:both; }
+
+/* For IE 6/7 (trigger hasLayout) */
+.cf { zoom:1; }
+
+/*horizontal menu styles*/
+nav {
+ background: #916A31;
+ height: 4.5em;  /* larger than ul, li below so some shows, creates 2-tone bar on bottom */
+ margin-left: 2rem;
+ margin-right: 4rem;
+}
+
+/* Strip defaults */
+
+.cf ul, li {
+ margin: 0;
+ padding: 0;
+ list-style: none;
+ float: left;
+}
+
+.cf ul {
+ background: #D5973C;
+ height: 4.1em;
+ width: 100%;
+}
+
+/* display horizontally (inline, not block) */
+
+.cf li a {
+ display: block;
+ line-height: 3.6em;
+ padding: 0 1em;
+ font-size: 15px;
+ color: black;
+ text-decoration: none;
+}
+
+.cf li a:hover {
+ background: #916A31;         /* same color as nav */
+ height: 3.6em;                 
+ padding-top: .3em;
+ position: relative;
+ top: -.3em;                    /* this fixes the menu text dropping a bit */
+ border-radius: .3em .3em 0 0;  /* round corners */
+}
+
+/* current class is applied to home in html nav */
+
+.current, a:hover.current {
+ background: #AD9B7F;
+ color: #eee;
+ padding-top: .3em;
+ position: relative;
+ top: -.3em;                    /* this fixes the menu text dropping a bit */
+ border-radius: .3em .3em 0 0;  /* round corners */
+ border-bottom: .3em solid #917F63;  
+ cursor: default;
+}
+
+h2 { 
+  font-size: 2.1rem; 
+  color: #363942;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+/* Default font size: 20px       */
+/* Default font color: Dark Green */
+p {
+  font-size: 20px;
+  color: #284907;
+  padding-left: 2rem;
+}
+
+/* Images will be over gray background with a bright green border around the container */
+
+figure { 
+  background-color: #363942; 
+  padding: 1rem;
+  border: 4px solid #5C832F; 
+}
+
+/* Link:          Blue 
+ Visited Links: Purple
+ Hover:         Red
+ Active:        Black With A Red Background
+*/
+
+a:link { color: #0000FF; }
+
+/* adding a:focus per Lynda video instructions */
+a:focus { outline: thin dotted; }
+
+a:visited { color: #800080; }
+
+/* Adding outline: 0; per Lynda video instructions */
+a:hover {
+  color: darkred;
+  background-color: black;
+  text-decoration: none;
+  outline: 0;
+}
+
+/* Adding outline: 0; per Lynda video instructions */
+a:active {
+  color:  black;
+  background-color: darkred;
+  text-decoration: none;
+  outline: 0;
+}
+
+/* ------------ Image Page ------------ */
+
+.gallery a img { border: 2px solid white; }
+
+.gallery a:hover img { border: 2px solid #D5973C; }
+
+/* ------------ Table Styles ------------ */
+
+.TFtable{
+  margin-left: 4em;
+  border-collapse:collapse; 
+  width: 75%;
+}
+.TFtable td{ 
+  padding:7px; border:#916A31 2px solid;
+}
+/* provide some minimal visual accomodation for IE8 and below */
+.TFtable tr{
+  background: #ffffcc;
+}
+/*  Define the background color for all the ODD background rows  */
+.TFtable tr:nth-child(odd){ 
+  background: #AD9B7F;
+  color:  black;
+}
+/*  Define the background color for all the EVEN background rows  */
+.TFtable tr:nth-child(even){
+  background:#eee;
+}
+
+/* ------------ Characteristics Web Page ------------ */
+
+.charflex{
+
+height: 35em;
+width: 91em;
+display: flex;
+flex-direction: column;
+margin: 2em;
+/*justify-content: space-between; */
+flex-wrap: wrap;
+}
+
+/* Characteristics table goes here */
+.charflex .charflexone { 
+height: 90%;
+width: 65%;
+}
+
+.charflex .charflextwo { 
+height: 5%;
+width: 65%; 
+}
+
+.charflex .charflexthree { 
+height: 40%; 
+width: 40%;
+}
+
+/* Additional info goes here */
+.charflex .charflexfour { 
+height: 49%; 
+width: 40%; 
+color: #284907;
+padding: 1em;
+background-color:#FFFFCC;
+border: 2px solid #916A31;
+}
+
+.charflexfour a { font-size: 1.5rem; }
+.charflexfour p { font-size: 1.5rem; }
+
+.check { float: left; }
+.check-text { font-weight: bold; }
+
+/* ------------ History Web Page ------------ */
+
+.histflex{
+
+height: 35em;
+width: 91em;
+display: flex;
+flex-direction: column;
+margin: 2em;
+/*justify-content: space-between; */
+flex-wrap: wrap;
+}
+
+/* Characteristics table goes here */
+.histflex .histflexone { 
+height: 2%;
+width: 40%;
+}
+
+.histflex .histflextwo { 
+height: 96%;
+width: 40%;
+}
+
+.histflex .histflexthree { 
+height: 30%; 
+width: 48%;
+color: #284907;
+background-color:#FFFFCC;
+border: 2px solid #916A31;
+padding-top: 3px;
+padding-left: 15px;
+padding-right: 15px;  
+}
+
+.histflex .histflexfour { 
+height: 67%; 
+width: 65%; 
+}
+
+.histflex .histflexfive { 
+height: 99%; 
+width: 25%; 
+}
+
+.histflexthree a { font-size: 1.2rem; }
+.histflextwo p { font-size: 1.2rem; } 
+.histflexthree p { font-size: 1.2rem; }
+
+/* ------------ Health Web Page ------------ */
+
+.healthflex{
+
+height: 35em;
+width: 91em;
+display: flex;
+flex-direction: row;
+margin: 2em;
+/*justify-content: space-between; */
+flex-wrap: wrap;
+}
+
+/* Characteristics table goes here */
+.healthflex .healthflexone { 
+height: 75%;
+width: 30%;
+align-content: center;
+padding-top: 3em;
+}
+
+.healthflex .healthflextwo { 
+height: 70%;
+width: 65%; 
+}
+
+.healthflex h3 { 
+font-size: 1.4rem; 
+font-weight: bold; 
+}
+
+.health_p1 { 
+font-size: 1.6rem; 
+max-width: 55em; 
+}
+
+.healthflextwo p { 
+font-size: 1.3rem; 
+padding-left: 5px;
+}
+
+/* ------------ Footer ------------ */
+footer {
+  padding: 1rem;
+  margin: 2rem;
+}
+
+footer p {
+color:#284907 ;
+font-size: 1.1rem;
+}
+
+/* ------------ Responsive Design ------------ */
+
+@media only screen and (min-width: 600px) and (max-width: 3000px) {
+.responsive { width: 100%; }
+.havanese-clip { width: 25%; } 
+}
+
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+  .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+  }
+  .havanese-clip { width: 25%; }
+}
+
+@media only screen and (max-width: 320px) {
+ .responsive { width: 100%; }
+ .havanese-clip { width: 25%; } 
+}
+
+.responsive {
+padding: 0 6px;
+float: left;
+width:  29%;
+margin: auto;
+}
+
+div.desc {
+padding: 15px;
+text-align: center;
+}
+
+div.gallery img {
+width: 100%;
+height: auto;
+}
+
+.clearfix:after {
+content: "";
+display: table;
+clear: both;
+}
