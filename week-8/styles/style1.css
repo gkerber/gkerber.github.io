@@ -211,7 +211,7 @@ a:active {
   /*  Define the background color for all the ODD background rows  */
   .TFtable tr:nth-child(odd){ 
     background: #AD9B7F;
-    color: white;
+    color: black;
   }
   /*  Define the background color for all the EVEN background rows  */
   .TFtable tr:nth-child(even){
