@@ -1,4 +1,3 @@
-
 /* Color Scheme: Japanese Garden
    #D8CAA8 (Cream)
    #FFFFCC (Yellow)
@@ -294,11 +293,9 @@ a:active {
   color: #284907;
   background-color:#FFFFCC;
   border: 2px solid #916A31;
-  
   padding-top: 3px;
   padding-left: 15px;
-  padding-right: 15px;
-  
+  padding-right: 15px;  
 }
 
 .histflex .histflexfour { 
@@ -314,6 +311,43 @@ a:active {
  .histflexthree a { font-size: 1.2rem; }
  .histflextwo p { font-size: 1.2rem; } 
  .histflexthree p { font-size: 1.2rem; }
+
+ /* ------------ Health Web Page ------------ */
+
+ .healthflex{
+
+  height: 35em;
+  width: 91em;
+  display: flex;
+  flex-direction: row;
+  margin: 2em;
+  /*justify-content: space-between; */
+  flex-wrap: wrap;
+}
+
+/* Characteristics table goes here */
+.healthflex .healthflexone { 
+  height: 75%;
+  width: 30%;
+  align-content: center;
+  padding-top: 3em;
+}
+
+.healthflex .healthflextwo { 
+  height: 70%;
+  width: 65%; 
+}
+ .health_p1 { 
+  font-size: 1.6rem; 
+  max-width: 55em; 
+}
+
+.healthflextwo li {
+  font-size: 1.2rem; 
+  font-weight: bold;
+}
+
+.healthflextwo p { font-size: 1.4rem; }
 
 /* ------------ Footer ------------ */
 footer {
