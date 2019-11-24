@@ -150,6 +150,8 @@ p {
   padding-left: 2rem;
 }
 
+.index_p1 { max-width: 53em; }
+
 /* Images will be over gray background with a bright green border around the container */
 
 figure { 
