@@ -1,0 +1,133 @@
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width" />
+    <meta charset="utf-8" />
+    <title>Quality Assurance Report</title>
+    <style>
+      html {
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-size: 10px;
+      }
+      body {
+        max-width: 1000px;
+        margin: auto;
+        font-size: 1.9em;
+        padding: 1em;
+      }
+      footer {
+        border-top: 6px solid #999;
+        margin-top: 3em;
+        padding-top: 2em;
+      }
+      header h1 {
+        background-color: #336699;
+        color: #ccc;
+        padding: 0.5em;
+        border-top: 5px solid #6699cc;
+        border-radius: 10px;
+        margin-left: -1em;
+        margin-right: -1em;
+      }
+      header nav ul {
+        list-style-type: none;
+        background-color: #999;
+      }
+      header nav ul li {
+        display: inline-block;
+      }
+      header nav ul li a {
+        color: #fff;
+        display: block;
+        text-decoration: none;
+        padding: 10px;
+      }
+      header nav ul li a:hover {
+        background-color: #666;
+      }
+      #project-plan dt {
+        border-top: 2px solid #000;
+        font-weight: bold;
+        margin-top: 1em;
+        padding-top: 1em;
+      }
+      #project-plan dd:last-child {
+        border-bottom: 6px solid #000;
+        margin-bottom: 2em;
+        padding-bottom: 1em;
+        margin-left: inherit;
+        padding-left: 2em;
+      }
+      a { padding-left: 2em; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Quality assurance report</h1>
+      <div w3-include-html="nav.html"></div>
+    </header>
+    <main>
+      <section>
+        <dl>
+          <dt>What does quality assurance mean for web site development?</dt>
+              <dd>Quality Assurance (QA) ensures that end-users get a functional user interface and the best 
+                 user experience when using a web app or website. It examines a website or web application 
+                  to try and uncover any flaws that might have been overlooked during design and development.
+                  Quality Assurance usually involves:
+                 <ul>
+                    <li>Requirement testing</li>
+                    <li>Design evaluation</li>
+                    <li>Functionality testing</li>
+                 </ul>
+                 <a href = "https://medium.com/@f5studio/what-is-qa-and-why-quality-assurance-is-important-in-web-development-process-f17ae9c59de7" title="F5Studio" target="_blank">Reference (F5Studio)</a>
+              </dd>
+          <dt>Describe the two key principles of Quality Assurance: &quot;Fit for Purpose&quot; and &quot;Right First Time&quot; </dt>
+             <dd>
+                <ul>
+                   <li>Fit for Purpose</li>
+                      <p>The product or service meets its intended purpose</p>        
+                   <li>Right First Time</li>
+                      <p>Any mistakes are eliminated and/or immediately dealt with</p>
+                </ul>
+                <a href = "https://www.projectmanager.com/blog/quality-assurance-and-testing" title="ProjectManager" target="_blank">Reference (ProjectManager.com)</a>
+             </dd>            
+          <dt>How do web standard relate to web quality?</dt>
+             <dd>Web standards are rules and guidelines that can be used to achieve web quality</dd>
+          <dt>Describe what Web Accessibility means</dt>
+             <dd>Web accessibility means that websites, tools, and technologies are designed and developed so that people with disabilities 
+                 can use them</dd>
+             <a href = "https://www.w3.org/WAI/fundamentals/accessibility-intro/" title="w3 Accessibility Intro" target="_blank">Reference (w3 Accessibility Intro)</a>
+          <dt>What steps you can take to make your pages more accessible?</dt>
+             <dd>
+                <ul>
+                    <li>Provide text alternatives for non-text content</li>
+                       <p>Text alternatives convey the purpose of an image or function to provide an equivalent user experience</p>
+                    <li>Ensure that content can be presented in different ways</li>
+                       <p>This allows content to be correctly read aloud, enlarged, or adapted to meet the needs and preferences of different people</p>
+                    <li>Ensure functionality is available from a keyboard</li>
+                       <p>Many people do not use the mouse and rely on the keyboard to interact with the web</p>
+                    <li>Ensure text is readable and understandable</li>
+                       <p>Content authors need to ensure that text content is readable and understandable to the broadest audience possible, 
+                          including when it is read aloud by text-to-speech.</p>
+                    <li>Ensure content is compatible with current and future user tools</li>
+                       <p>Meeting this requirement helps maximize compatibility with current and future user agents, including assistive technologies.</p>
+                </ul>
+                <a href = "https://www.w3.org/WAI/fundamentals/accessibility-principles/" title="w3 Accessibility Principles" target="_blank">Reference (w3 Accessibility Principles)</a>
+            </dd>
+      </section>
+    </main>
+    <footer>
+      &copy;Gail Kerber
+    </footer>
+    <!-- Enable includes -->
+    <script src="../scripts/includes.js"></script>
+
+    <!-- If you are wanting to use includes throughout your site, you'll have to change the above link to be whatever 
+      location your script is in. For me, it would be "/bit112-fall-2019/scripts/includes.js" because my site is 
+      https://alboss-cascadia.github.io/bit112-fall-2019/ -->
+
+    <script>
+      includeHTML();
+    </script>
+  </body>
+</html>
