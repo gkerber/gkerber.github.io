@@ -45,7 +45,7 @@ header {
     display: block;
     color: white;
     text-align: center;
-    padding: .5rem .5rem;
+    padding: .1rem .1rem;
     text-decoration: none;
   }
 
@@ -69,7 +69,7 @@ header {
     font-size: 1.8rem;
     border-right-style: solid;
     border-right-color: white;
-    width: 25.3rem; 
+    width: 25.4rem; 
   }
   
  #reports-nav li a {
