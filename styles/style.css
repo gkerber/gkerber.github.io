@@ -69,14 +69,14 @@ header {
     font-size: 1.8rem;
     border-right-style: solid;
     border-right-color: white;
-    width: 25.2rem; 
+    width: 25.3rem; 
   }
   
  #reports-nav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 1.3rem 1.4rem;
+    padding: 1rem 1rem;
     text-decoration: none;
   } 
 
